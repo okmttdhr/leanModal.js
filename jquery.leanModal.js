@@ -19,7 +19,7 @@
 
         options=$.extend(defaults,options);
         var o = options;
-        
+
         return this.each(function(){
             $(this).click(function(e){
                 var modal_id=$(this).attr("href");
