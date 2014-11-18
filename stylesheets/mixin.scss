@@ -1,0 +1,106 @@
+@mixin box-shadow($op1: 1px, $op2: 1px, $op3: 1px, $op4: 1px, $op5: #fff) {
+  -webkit-box-shadow: $op1 $op2 $op3 $op4 $op5;
+  -moz-box-shadow: $op1 $op2 $op3 $op4 $op5;
+  -o-box-shadow: $op1 $op2 $op3 $op4 $op5;
+  -ms-box-shadow: $op1 $op2 $op3 $op4 $op5;
+  box-shadow: $op1 $op2 $op3 $op4 $op5;
+}
+
+@mixin box-shadow-inset($op1: 1px, $op2: 1px, $op3: 1px, $op4: 1px, $op5: #fff) {
+  -webkit-box-shadow: $op1 $op2 $op3 $op4 $op5 inset;
+  -moz-box-shadow: $op1 $op2 $op3 $op4 $op5 inset;
+  -o-box-shadow: $op1 $op2 $op3 $op4 $op5 inset;
+  -ms-box-shadow: $op1 $op2 $op3 $op4 $op5 inset;
+  box-shadow: $op1 $op2 $op3 $op4 $op5 inset;
+}
+
+@mixin border-radius($op1) {
+  -moz-border-radius: $op1;
+  -o-border-radius: $op1;
+  -ms-border-radius: $op1;
+  border-radius: $op1;
+}
+
+@mixin line-top($op1: .1, $op2: .3) {
+  border-top: 1px solid rgba(0, 0, 0, $op1);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, $op2) inset;
+}
+
+@mixin line-left($op1: .1, $op2: .3) {
+  border-left: 1px solid rgba(0, 0, 0, $op1);
+  box-shadow: -1px 0 0 rgba(255, 255, 255, $op2);
+}
+
+@mixin line-right($op1: .1, $op2: .3) {
+  border-right: 1px solid rgba(0, 0, 0, $op1);
+  box-shadow: -1px 0 0 rgba(255, 255, 255, $op2) inset;
+}
+
+@mixin line-bottom($op1: .1, $op2: .3) {
+  border-bottom: 1px solid rgba(0, 0, 0, $op1);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, $op2);
+}
+
+@mixin transition($props: all, $duration: .5s, $easing: linear) {
+  -webkit-transition: $props $duration $easing;
+  -moz-transition: $props $duration $easing;
+  -ms-transition: $props $duration $easing;
+  -o-transition: $props $duration $easing;
+  transition: $props $duration $easing;
+};
+@mixin tstf($duration: .5s, $easing: linear) {
+  // transformのベンダープレフィックス付きtransitionです
+  -webkit-transition: -webkit-transform $duration $easing;
+  -moz-transition: -moz-transform $duration $easing;
+  -ms-transition: -ms-transform $duration $easing;
+  -o-transition: -o-transform $duration $easing;
+  transition: transform $duration $easing;
+}
+
+
+@mixin rotate($degrees) {
+  -webkit-transform: rotate($degrees);
+  -moz-transform: rotate($degrees);
+  -ms-transform: rotate($degrees);
+  -o-transform: rotate($degrees);
+  transform: rotate($degrees);
+}
+
+@mixin scale($x) {
+  -webkit-transform: scale($x);
+  -moz-transform: scale($x);
+  -ms-transform: scale($x);
+  -o-transform: scale($x);
+  transform: scale($x);
+}
+
+@mixin translate($x,$y,$z:0) {
+  -webkit-transform: translate3d($x,$y,$z);
+  -moz-transform: translate3d($x,$y,$z);
+  -ms-transform: translate3d($x,$y,$z);
+  -o-transform: translate3d($x,$y,$z);
+  transform: translate3d($x,$y,$z);
+}
+
+@mixin matrix($x,$y,$z,$xx,$yy,$zz) {
+  -webkit-transform: matrix($x,$y,$z,$xx,$yy,$zz);
+  -moz-transform: matrix($x,$y,$z,$xx,$yy,$zz);
+  -ms-transform: matrix($x,$y,$z,$xx,$yy,$zz);
+  -o-transform: matrix($x,$y,$z,$xx,$yy,$zz);
+  transform: matrix($x,$y,$z,$xx,$yy,$zz);
+}
+
+@mixin keyframes($name) {
+  @-webkit-keyframes #{$name} {
+    @content;
+  }
+  @-moz-keyframes #{$name} {
+    @content;
+  }
+  @-ms-keyframes #{$name} {
+    @content;
+  }
+  @keyframes #{$name} {
+    @content;
+  }
+}

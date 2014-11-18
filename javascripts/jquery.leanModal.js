@@ -22,25 +22,21 @@
 
         return this.each(function(){
             $(this).click(function(e){
-                var modal_id=$(this).attr("href");
+                var modal_id = $(this).attr("href");
 
                 $("#lean_overlay").click(function(){close_modal(modal_id)});
 
                 $(o.closeButton).click(function(){close_modal(modal_id)});
 
-                var modal_height=$(modal_id).outerHeight();
-                var modal_width=$(modal_id).outerWidth();
+                var modal_height = $(modal_id).outerHeight();
+                var modal_width = $(modal_id).outerWidth();
 
                 $("#lean_overlay").css({"display":"block",opacity:0});
                 $("#lean_overlay").transition({opacity:o.overlay},o.speed_overlay);
 
                 if ($(window).height() < o.position) {
                     var p = 'absolute';
-                    var top = $(window).height()/2-300;
-                    if (o.place == "top") {
-                        var p = 'fixed';
-                        var top = $(window).height()*0.1;
-                    };
+                    var top = ($(window).height()/2) - (modal_height/2);
                 } else {
                     var p = 'fixed';
                     var top = o.top;
