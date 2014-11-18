@@ -9,7 +9,7 @@
 body {
     width: 100%;
     height: 100%;
-    font-family: Lora,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 html {
@@ -24,7 +24,6 @@ h4,
 h5,
 h6 {
     margin: 0 0 35px;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     letter-spacing: 1px;
 }
 
@@ -62,7 +61,6 @@ a:focus {
 .navbar-custom {
     margin-bottom: 0;
     border-bottom: 1px solid rgba(255,255,255,.3);
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     background-color: #000;
 }
 
@@ -277,7 +275,6 @@ a:focus {
 }
 
 .btn {
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 400;
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
@@ -376,4 +373,10 @@ img::-moz-selection {
     width: 100%;
     background: #000;
     display: none;
+}
+
+.intro-text {
+  a:hover {
+    text-decoration: underline;
+  }
 }
