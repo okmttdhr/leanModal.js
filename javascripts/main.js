@@ -8,7 +8,6 @@ var lean = {
       speed_modal: 200,
     });
 
-
     $('a[href="#fade_scale_modal"]').leanModal({
       overlay : 0.7,
       position: 700,
