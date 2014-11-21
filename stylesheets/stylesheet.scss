@@ -60,8 +60,6 @@ a:focus {
 
 .navbar-custom {
     margin-bottom: 0;
-    border-bottom: 1px solid rgba(255,255,255,.3);
-    background-color: #000;
 }
 
 .navbar-custom .navbar-brand:focus {
@@ -125,7 +123,7 @@ a:focus {
 .intro {
     display: table;
     width: 100%;
-    height: auto;
+    height: 100%;
     padding: 100px 0;
     text-align: center;
     color: #fff;
@@ -378,5 +376,18 @@ img::-moz-selection {
 .intro-text {
   a:hover {
     text-decoration: underline;
+  }
+}
+
+
+@media screen and (max-width: 767px) {
+  .modal_content {
+    width: 80%;
+  }
+  .navbar-okp-mb {
+    text-align: right;
+  }
+  .navbar-header {
+    display: none;
   }
 }

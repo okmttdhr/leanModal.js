@@ -65,47 +65,45 @@ a:focus {
 /* line 61, stylesheet.scss */
 .navbar-custom {
   margin-bottom: 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-  background-color: #000;
 }
 
-/* line 67, stylesheet.scss */
+/* line 65, stylesheet.scss */
 .navbar-custom .navbar-brand:focus {
   outline: 0;
 }
 
-/* line 71, stylesheet.scss */
+/* line 69, stylesheet.scss */
 .navbar-custom .navbar-brand .navbar-toggle {
   padding: 4px 6px;
   font-size: 16px;
   color: #fff;
 }
 
-/* line 78, stylesheet.scss */
+/* line 76, stylesheet.scss */
 .navbar-custom .navbar-brand .navbar-toggle:focus,
 .navbar-custom .navbar-brand .navbar-toggle:active {
   outline: 0;
 }
 
-/* line 82, stylesheet.scss */
+/* line 80, stylesheet.scss */
 .navbar-custom a {
   color: #fff;
 }
 
-/* line 86, stylesheet.scss */
+/* line 84, stylesheet.scss */
 .navbar-custom .nav li.active {
   outline: nonte;
   background-color: rgba(255, 255, 255, 0.3);
 }
 
-/* line 91, stylesheet.scss */
+/* line 89, stylesheet.scss */
 .navbar-custom .nav li a {
   -webkit-transition: background .3s ease-in-out;
   -moz-transition: background .3s ease-in-out;
   transition: background .3s ease-in-out;
 }
 
-/* line 99, stylesheet.scss */
+/* line 97, stylesheet.scss */
 .navbar-custom .nav li a:hover,
 .navbar-custom .nav li a:focus,
 .navbar-custom .nav li a.active {
@@ -114,7 +112,7 @@ a:focus {
 }
 
 @media (min-width: 767px) {
-  /* line 105, stylesheet.scss */
+  /* line 103, stylesheet.scss */
   .navbar {
     padding: 20px 0;
     border-bottom: 0;
@@ -125,67 +123,67 @@ a:focus {
     transition: background .5s ease-in-out,padding .5s ease-in-out;
   }
 
-  /* line 115, stylesheet.scss */
+  /* line 113, stylesheet.scss */
   .top-nav-collapse {
     padding: 0;
     background-color: #000;
   }
 
-  /* line 120, stylesheet.scss */
+  /* line 118, stylesheet.scss */
   .navbar-custom.top-nav-collapse {
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   }
 }
-/* line 125, stylesheet.scss */
+/* line 123, stylesheet.scss */
 .intro {
   display: table;
   width: 100%;
-  height: auto;
+  height: 100%;
   padding: 100px 0;
   text-align: center;
   color: #fff;
   background-color: #3E95C1;
 }
 
-/* line 135, stylesheet.scss */
+/* line 133, stylesheet.scss */
 .intro .intro-body {
   display: table-cell;
   vertical-align: middle;
 }
 
-/* line 140, stylesheet.scss */
+/* line 138, stylesheet.scss */
 .intro .intro-body .brand-heading {
   font-size: 40px;
 }
 
-/* line 144, stylesheet.scss */
+/* line 142, stylesheet.scss */
 .intro .intro-body .intro-text {
   font-size: 18px;
 }
 
-/* line 147, stylesheet.scss */
+/* line 145, stylesheet.scss */
 .intro .intro-body .intro-text a {
   color: #fff;
 }
 
 @media (min-width: 767px) {
-  /* line 152, stylesheet.scss */
+  /* line 150, stylesheet.scss */
   .intro {
     height: 100%;
     padding: 0;
   }
 
-  /* line 157, stylesheet.scss */
+  /* line 155, stylesheet.scss */
   .intro .intro-body .brand-heading {
     font-size: 40px;
   }
 
-  /* line 161, stylesheet.scss */
+  /* line 159, stylesheet.scss */
   .intro .intro-body .intro-text {
     font-size: 25px;
   }
 }
-/* line 166, stylesheet.scss */
+/* line 164, stylesheet.scss */
 .btn-circle {
   width: 70px;
   height: 70px;
@@ -201,7 +199,7 @@ a:focus {
   transition: background .3s ease-in-out;
 }
 
-/* line 182, stylesheet.scss */
+/* line 180, stylesheet.scss */
 .btn-circle:hover,
 .btn-circle:focus {
   outline: 0;
@@ -209,7 +207,7 @@ a:focus {
   background: rgba(255, 255, 255, 0.1);
 }
 
-/* line 188, stylesheet.scss */
+/* line 186, stylesheet.scss */
 .btn-circle i.animated {
   -webkit-transition-property: -webkit-transform;
   -webkit-transition-duration: 1s;
@@ -217,7 +215,7 @@ a:focus {
   -moz-transition-duration: 1s;
 }
 
-/* line 195, stylesheet.scss */
+/* line 193, stylesheet.scss */
 .btn-circle:hover i.animated {
   -webkit-animation-name: pulse;
   -moz-animation-name: pulse;
@@ -230,19 +228,19 @@ a:focus {
 }
 
 @-webkit-keyframes pulse {
-  /* line 207, stylesheet.scss */
+  /* line 205, stylesheet.scss */
   0 {
     -webkit-transform: scale(1);
     transform: scale(1);
   }
 
-  /* line 212, stylesheet.scss */
+  /* line 210, stylesheet.scss */
   50% {
     -webkit-transform: scale(1.2);
     transform: scale(1.2);
   }
 
-  /* line 217, stylesheet.scss */
+  /* line 215, stylesheet.scss */
   100% {
     -webkit-transform: scale(1);
     transform: scale(1);
@@ -250,31 +248,31 @@ a:focus {
 }
 
 @-moz-keyframes pulse {
-  /* line 224, stylesheet.scss */
+  /* line 222, stylesheet.scss */
   0 {
     -moz-transform: scale(1);
     transform: scale(1);
   }
 
-  /* line 229, stylesheet.scss */
+  /* line 227, stylesheet.scss */
   50% {
     -moz-transform: scale(1.2);
     transform: scale(1.2);
   }
 
-  /* line 234, stylesheet.scss */
+  /* line 232, stylesheet.scss */
   100% {
     -moz-transform: scale(1);
     transform: scale(1);
   }
 }
 
-/* line 240, stylesheet.scss */
+/* line 238, stylesheet.scss */
 .content-section {
   padding-top: 100px;
 }
 
-/* line 244, stylesheet.scss */
+/* line 242, stylesheet.scss */
 .download-section {
   width: 100%;
   padding: 50px 0;
@@ -287,7 +285,7 @@ a:focus {
   -o-background-size: cover;
 }
 
-/* line 256, stylesheet.scss */
+/* line 254, stylesheet.scss */
 #map {
   width: 100%;
   height: 200px;
@@ -295,23 +293,23 @@ a:focus {
 }
 
 @media (min-width: 767px) {
-  /* line 263, stylesheet.scss */
+  /* line 261, stylesheet.scss */
   .content-section {
     padding-top: 250px;
   }
 
-  /* line 267, stylesheet.scss */
+  /* line 265, stylesheet.scss */
   .download-section {
     padding: 100px 0;
   }
 
-  /* line 271, stylesheet.scss */
+  /* line 269, stylesheet.scss */
   #map {
     height: 400px;
     margin-top: 250px;
   }
 }
-/* line 277, stylesheet.scss */
+/* line 275, stylesheet.scss */
 .btn {
   font-weight: 400;
   -webkit-transition: all .3s ease-in-out;
@@ -319,14 +317,14 @@ a:focus {
   transition: all .3s ease-in-out;
 }
 
-/* line 284, stylesheet.scss */
+/* line 282, stylesheet.scss */
 .btn-default {
   border: 1px solid #219ab3;
   color: #219ab3;
   background-color: transparent;
 }
 
-/* line 291, stylesheet.scss */
+/* line 289, stylesheet.scss */
 .btn-default:hover,
 .btn-default:focus {
   border: 1px solid #219ab3;
@@ -335,66 +333,66 @@ a:focus {
   background-color: #219ab3;
 }
 
-/* line 298, stylesheet.scss */
+/* line 296, stylesheet.scss */
 ul.banner-social-buttons {
   margin-top: 0;
 }
 
 @media (max-width: 1199px) {
-  /* line 303, stylesheet.scss */
+  /* line 301, stylesheet.scss */
   ul.banner-social-buttons {
     margin-top: 15px;
   }
 }
 @media (max-width: 767px) {
-  /* line 309, stylesheet.scss */
+  /* line 307, stylesheet.scss */
   ul.banner-social-buttons li {
     display: block;
     margin-bottom: 20px;
     padding: 0;
   }
 
-  /* line 315, stylesheet.scss */
+  /* line 313, stylesheet.scss */
   ul.banner-social-buttons li:last-child {
     margin-bottom: 0;
   }
 }
-/* line 320, stylesheet.scss */
+/* line 318, stylesheet.scss */
 footer {
   padding: 50px 0;
 }
 
-/* line 324, stylesheet.scss */
+/* line 322, stylesheet.scss */
 footer p {
   margin: 0;
 }
 
-/* line 328, stylesheet.scss */
+/* line 326, stylesheet.scss */
 ::-moz-selection {
   text-shadow: none;
   background: #fcfcfc;
   background: rgba(255, 255, 255, 0.2);
 }
 
-/* line 334, stylesheet.scss */
+/* line 332, stylesheet.scss */
 ::selection {
   text-shadow: none;
   background: #fcfcfc;
   background: rgba(255, 255, 255, 0.2);
 }
 
-/* line 340, stylesheet.scss */
+/* line 338, stylesheet.scss */
 img::selection {
   background: 0 0;
 }
 
-/* line 344, stylesheet.scss */
+/* line 342, stylesheet.scss */
 img::-moz-selection {
   background: 0 0;
 }
 
 /* modal section */
-/* line 352, stylesheet.scss */
+/* line 350, stylesheet.scss */
 .modal_content {
   width: 500px;
   display: none;
@@ -406,7 +404,7 @@ img::-moz-selection {
   border-radius: 20px;
 }
 
-/* line 359, stylesheet.scss */
+/* line 357, stylesheet.scss */
 .modal_content.fade_scale {
   -webkit-transform: scale(0.5);
   -moz-transform: scale(0.5);
@@ -415,7 +413,7 @@ img::-moz-selection {
   transform: scale(0.5);
 }
 
-/* line 367, stylesheet.scss */
+/* line 365, stylesheet.scss */
 #lean_overlay {
   position: fixed;
   z-index: 100;
@@ -427,7 +425,24 @@ img::-moz-selection {
   display: none;
 }
 
-/* line 379, stylesheet.scss */
+/* line 377, stylesheet.scss */
 .intro-text a:hover {
   text-decoration: underline;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 384, stylesheet.scss */
+  .modal_content {
+    width: 80%;
+  }
+
+  /* line 387, stylesheet.scss */
+  .navbar-okp-mb {
+    text-align: right;
+  }
+
+  /* line 390, stylesheet.scss */
+  .navbar-header {
+    display: none;
+  }
 }
